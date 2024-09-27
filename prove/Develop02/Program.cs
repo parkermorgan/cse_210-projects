@@ -26,8 +26,7 @@ class Program
             }
             else if (option == "4")
             {
-
-                entryManager.SaveToFile(entr);
+                EntryManager.SaveToFile(entries);
                 Console.WriteLine("Entries saved to file.");
             }
             else if (option == "5")
@@ -36,5 +35,6 @@ class Program
                 looping = false;
             }
         }
+        
     }
 }
