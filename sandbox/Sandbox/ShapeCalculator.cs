@@ -6,7 +6,7 @@ public class ShapeCalculator
     {
         while (true)
         {
-            Console.WriteLine("Please select a shape:\n1. Square\n2. Rectangle\n3. Circle\n4. Quit");
+            Console.WriteLine("\nPlease select a shape:\n1. Square\n2. Rectangle\n3. Circle\n4. Quit");
             string shape = Console.ReadLine();
 
             if (shape == "1")

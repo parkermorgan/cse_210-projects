@@ -6,7 +6,7 @@ class Program
     {
         while (true)
         {
-            Console.WriteLine("Please select a program:\n1. Shape Calculator\n2. Other Program\n3. Quit");
+            Console.WriteLine("\nPlease select a program:\n1. Shape Calculator\n2. Item List\n3. Quit");
             string selection = Console.ReadLine();
 
             if (selection == "1")
@@ -16,8 +16,8 @@ class Program
             }
             else if (selection == "2")
             {
-                Console.WriteLine("You selected another program (not implemented yet).");
-                // Call other program methods here
+                ItemListManager itemListManager = new ItemListManager();
+                itemListManager.Start();
             }
             else if (selection == "3")
             {
