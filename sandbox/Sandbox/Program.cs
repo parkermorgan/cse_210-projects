@@ -6,7 +6,7 @@ class Program
     {
         while (true)
         {
-            Console.WriteLine("\nPlease select a program:\n1. Shape Calculator\n2. Item List\n3. Quit");
+            Console.WriteLine("\nPlease select a program:\n1. Shape Calculator\n2. Item List\n3. Random Number Generator\n4. Quit");
             string selection = Console.ReadLine();
 
             if (selection == "1")
@@ -20,6 +20,11 @@ class Program
                 itemListManager.Start();
             }
             else if (selection == "3")
+            {
+                RandomNumManager randumNumManager = new RandomNumManager();
+                randumNumManager.Start();
+            }
+            else if (selection == "4")
             {
                 Console.WriteLine("Thank you for using the program.");
                 break; // This ends the loop

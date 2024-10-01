@@ -1,9 +1,10 @@
 using System;
-using System.Runtime.CompilerServices;
+using System.Net;
+using System.Security.Cryptography;
 
-class Program
+public class RandomNumManager
 {
-    static void Main(string[] args)
+    public void Start()
     {
         string response = "yes";
         Random randomGenerator = new Random();
@@ -21,18 +22,15 @@ class Program
             else if (guess < number)
             {
                 Console.WriteLine("Higher");
-            }
+            } 
             else if (guess == number)
             {
-                Console.WriteLine("You guessed it!");
-                Console.Write("Do you want to continue? ");
+                Console.WriteLine("Congrats! You guessed the number!");
+                Console.Write("Do you want to play again? ");
                 response = Console.ReadLine();
                 number = randomGenerator.Next(1, 101);
-            }
-        
+            }  
         }
-        
-
-
     }
+
 }
