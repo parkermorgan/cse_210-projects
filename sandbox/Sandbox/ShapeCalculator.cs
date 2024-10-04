@@ -38,9 +38,9 @@ public class ShapeCalculator
         Console.Write("What is the length of each side of the square? ");
         string input = Console.ReadLine();
 
-        if (int.TryParse(input, out int length))
+        if (double.TryParse(input, out double length))
         {
-            int area = length * length;
+            double area = length * length;
             Console.WriteLine($"The area of the square is {area}.");
         }
         else
@@ -57,9 +57,9 @@ public class ShapeCalculator
         Console.Write("What is the width? ");
         string widthInput = Console.ReadLine();
 
-        if (int.TryParse(lengthInput, out int length) && int.TryParse(widthInput, out int width))
+        if (double.TryParse(lengthInput, out double length) && double.TryParse(widthInput, out double width))
         {
-            int area = length * width;
+            double area = length * width;
             Console.WriteLine($"The area of the rectangle is {area}.");
         }
         else
